@@ -1,21 +1,21 @@
 @charset "UTF-8";
 
-:root {
+:root{
     --verde: #49a09d;
     --lilas: #5f2c82;
 }
 
-* {
+*{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 
-body,html{
-    background-color: var(--lilas);
+body,html {
     height: 100vh;
     width: 100vw;
+    background-color: var(--lilas);
 }
 
 main{
@@ -29,108 +29,108 @@ section#login{
     top: 50%;
     left: 50%;
     background-color: white;
-    width: 250px;
     height: 500px;
-    overflow: hidden;
+    width: 250px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
 
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: ease;
+    transition: height 0.3s, width 0.3s;
     transform: translate(-50%, -50%);
 }
 
-section#login > div#imagem{
-    display: block;
-    background: var(--lilas) url(../imagens/pexels-tranthangnhat-17570742.jpg) no-repeat;
-    background-size: cover;
+div#imagem{
     height: 200px;
+    background-image: url(../imagens/pexels-tranthangnhat-17570742.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
-section#login > div#formulario{
-    display: block;
+div#formulario{
     padding: 10px;
+
 }
 
 div#formulario > h1{
     text-align: center;
+    font-size: 1.7em;
     margin-bottom: 10px;
-    font-size: 1.8em;
 }
 
 div#formulario > p{
     font-size: 0.8em;
 }
 
-form > div.campo {
+div.campo{
     background-color: var(--lilas);
+    margin: 5px 0px;
     height: 35px;
     border-radius: 8px;
-    border: 2px solid var(--lilas);
-    margin: 5px 0px;
+    border: 0px solid var(--lilas);
+    
+}
+
+div.campo > i{
+    color: white;
+    width: 35px;
+    padding: 5px;
+   
 }
 
 div.campo > label {
     display: none;
 }
 
-div.campo > i {
-    color: white;
-    font-size: 2em;
-    width: 35px;
-    padding: 5px;
-}
-
 div.campo > input{
-    background-color: #94cfcd;
-    font-size: 1em;
-    width: calc(100% - 40px);
-    height: 100%;
-    border: 0px;
+    height: 90%;
     border-radius: 8px;
-    transform: translateY(-15px);  
-}
-
-div.campo > input:focus-within {
-    background-color: white;
-}
-
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 100%;
-    height: 35px;
-    background-color: var(--verde);
-    color: white;
+    background-color: #92cfcd;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-
+    width: calc(100% - 42px);
+    transform: translateY(-6px);
 }
 
-form > input[type=submit]:hover{
-    background-color: #33706e;
-    transition: 0.2s;
-    transform: scale(1.05);
+div.campo > input:focus-within{
+    background-color: white;
+    
 }
 
-form > a.botao{
+input[type=submit]{
     display: block;
-    font-size: 1em;
+    color: white;
     width: 100%;
     height: 35px;
-    background-color: white;
-    border: 2px solid var(--verde);
-    border-radius: 5px;
-    padding-top: 3px;
-    margin-top: 5px;
-    text-decoration: none;
-    text-align: center;
-    color: black;
+    margin: 5px 0px;
+    background-color: var(--verde);
+    border-radius: 8px;
+    border: none;
+    font-size: 1.0em;
 }
 
-form > a.botao:hover{
-    background-color: #61e4df85;
+input[type=submit]:hover{
+    background-color: #58bebb;
+    cursor: pointer;
+    transform: scale(1.03);
     transition: 0.3s;
-    transform: scale(1.05);
 }
+
+a.botao{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 35px;
+    border: 2px solid var(--verde);
+    border-radius: 8px;
+    text-align: center;
+    padding: 3px;
+}
+
+a.botao:hover{
+    background-color: #58bebb;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+
