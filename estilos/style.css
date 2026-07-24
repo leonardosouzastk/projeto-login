@@ -4,3 +4,133 @@
     --verde: #49a09d;
     --lilas: #5f2c82;
 }
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: var(--lilas);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+section#login > div#imagem{
+    display: block;
+    background: var(--lilas) url(../imagens/pexels-tranthangnhat-17570742.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: var(--lilas);
+    height: 35px;
+    border-radius: 8px;
+    border: 2px solid var(--lilas);
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 35px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    transform: translateY(-15px);  
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+form > input[type=submit]:hover{
+    background-color: #33706e;
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+form > a.botao{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    padding-top: 3px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+form > a.botao:hover{
+    background-color: #61e4df85;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
