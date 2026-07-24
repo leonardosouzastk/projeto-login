@@ -17,17 +17,12 @@ tv:1440px pra frente
     --lilas: #5f2c82;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 767px) and (orientation: landscape) {
 
-    body{
-        background-color: darkred;
-    }
-    
     section#login{
-        width: 80vw;
+        width: 90vw;
         height: 260px;
     }
-
 
     div#imagem{
         float: left;
@@ -38,6 +33,10 @@ tv:1440px pra frente
     div#formulario{
         float: right;
         width: 65%;
+    }
+
+    div#formulario > p{
+        font-size: 0.9em;
     }
 }
 
