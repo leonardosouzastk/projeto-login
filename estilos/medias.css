@@ -20,7 +20,7 @@ tv:1440px pra frente
 @media screen and (orientation: landscape) {
 
     body{
-        background-color: red;
+        background-color: darkred;
     }
     
     section#login{
